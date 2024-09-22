@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -35,4 +35,30 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+/* мой код */
+.content {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  width: 1140px;
+  gap: 0 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__list {
+  height: 298px;
+  overflow: auto;
+  margin-top: 26px;
+}
+
+.content__details {
+  flex: 1;
+  min-width: 0;
 }
