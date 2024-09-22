@@ -38,6 +38,18 @@ ol {
 }
 
 /* мой код */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .content {
   margin: 0 auto;
   display: flex;
@@ -100,4 +112,44 @@ ol {
 .content__list,
 .result__video-container {
   position: relative;
+}
+
+/* step 4 */
+.title {
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  line-height: 0.94;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+}
+
+.content__video-card-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.9;
+  color: #fff;
+  text-decoration: none;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__card-link_current .content__video-card {
+  background-color: #545050;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  line-height: 22px;
 }
