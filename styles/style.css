@@ -96,3 +96,8 @@ ol {
   flex: 1;
   min-width: 0;
 }
+
+.content__list,
+.result__video-container {
+  position: relative;
+}
