@@ -38,7 +38,7 @@ ol {
 }
 
 /* мой код */
-
+/* скрытый элемент */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -48,6 +48,20 @@ ol {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.content__list {
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .content {
@@ -61,7 +75,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .content__list {
@@ -152,4 +166,75 @@ ol {
 .search-form__fieldset-title {
   font-size: 18px;
   line-height: 22px;
+  padding-bottom: 5px;
+}
+
+.search-form__fieldset {
+  width: fit-content;
+  border: none;
+}
+
+.search-form__textfield {
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  appearance: none;
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 2px 0;
+}
+
+.search-form__pseudo-checkbox,
+.search-form__label-text,
+.button {
+  cursor: pointer;
+}
+
+.button {
+  background: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid #fff;
+  height: 34px;
+  padding: 0;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.button:active {
+  background-color: #545050;
+}
+.button:hover,
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__label {
+  display: flex;
+  gap: 5px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  width: 19px;
+  height: 19px;
+  background: none;
+  border: 1px solid #fff;
+  justify-content: center;
+  align-items: center;
 }
