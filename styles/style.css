@@ -58,6 +58,7 @@ ol {
 .content__list::-webkit-scrollbar {
   display: none;
 }
+
 /* Скрываем scrollbar для IE, Edge и Firefox */
 .content__list {
   -ms-overflow-style: none; /* IE и Edge */
